@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KELVIN JOHNSON SIAW | PORTFOLIO</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .construction-container {
+      text-align: center;
+      padding: 10%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .construction-icon {
+      font-size: 80px;
+      color: #f39c12;
+      margin-bottom: 20px;
+      color: #00AEEF;
+    }
+    .countdown {
+      font-size: 24px;
+      color: #555555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="construction-container">
+  <div class="container logo">
+        <a href="index.php"><img src="./img/logo.png" alt="logo" height="100" width="200" style="object-fit: contain" ></a>
+    </div>
+    <i class="fas fa-tools construction-icon" style="color: #e8d788;"></i>
+    <h2>Website Under Construction</h2>
+    <p>Website will be available on the date stated.</p>
+    <div class="countdown" id="countdown">Coming Soon...</div>
+  </div>
+
+  <!-- JavaScript for Countdown Timer -->
+  <script>
+    // Set the date when the construction is expected to end
+    const endDate = new Date("2023-12-25 00:00:00").getTime();
+
+    // Update the countdown every second
+    const countdownInterval = setInterval(function() {
+      const now = new Date().getTime();
+      const timeLeft = endDate - now;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "Construction Completed!";
+      } else {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        
+        document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
