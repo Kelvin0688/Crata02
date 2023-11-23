@@ -15,9 +15,9 @@
 <body>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e8d788;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
         <div class="container">
-            <a class="navbar-brand" href="music.html"><img src="./img/logo.png" height="30" width="30" alt="Crata's logo" style="margin: 0 10px 0 0;">Crata.Beats</a>
+            <a class="navbar-brand" href="music.html"><img src="./img/crata.jpg" height="30" width="30" alt="Crata's logo" style="margin: 0 10px 0 0;">Crata.Beats</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +43,7 @@
     <!-- ... (previous navbar code remains unchanged) ... -->
 
     <!-- Home section -->
-    <section id="home" class="py-5 text-center text-dark" style="background-color: #e8d788;">
+    <section id="home" class="py-5 text-center text-light" style="background-color: #000000;">
         <div class="container">
             <h1 class="display-2">Welcome to the Crata.Beats Website</h1>
             <p class="lead">Discover the latest tracks and beats.</p>
@@ -73,67 +73,46 @@
 
        
         <div class="row music-gallery text-center">
-            <div class="col-md-4 mb-4 track1">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 1</h3>
-                <p>Description of Track 1</p>
+            <div class="col-md-4 mb-4 track" data-title="Happy">
+                <img src="./img/Happy.jpg" height="200" width="200" alt="">
+                <h3>Happy</h3>
+                <p>A bouncy beat with a simple melody.</p>
                 <audio controls>
-                    <source src="beats/CB1.mp3" type="audio/mpeg">
+                    <source src="./beats/CB1-Happy.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <div class="col-md-4 mb-4 track2 ">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 2</h3>
-                <p>Description of Track 2</p>
+            <div class="col-md-4 mb-4 track" data-title="Hello Mom">
+                <img src="./img/Hello Mom.jpg" height="200" width="200" alt="">
+                <h3>Hello Mom</h3>
+                <p>A track made to pour out ur feelings as a rapper.</p>
                 <audio controls>
-                    <source src="./beats/CB1.mp3" type="audio/mpeg">
+                    <source src="./beats/CB20-hello_mom.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <div class="col-md-4 mb-4 track3">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 3</h3>
-                <p>Description of Track 2</p>
+            <div class="col-md-4 mb-4 track" data-title="The Repeat">
+                <img src="./img/Therepeat.jpg" height="200" width="200" alt="">
+                <h3>The Repeat</h3>
+                <p>Powerful beat you can play over and over. A rapper can talk anything possible on thus beat.</p>
                 <audio controls>
-                    <source src="./beats/CB1.mp3" type="audio/mpeg">
+                    <source src="./beats/CB6-therepeat.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="col-md-4 mb-4 track" data-title="Title of Track 3">
+                <img src="./img/pissed.jpg" height="200" width="200" alt="">
+                <h3>Pissed</h3>
+                <p>An angry beat to make you talk out your feelings.</p>
+                <audio controls>
+                    <source src="./beats/CB23-Pissed.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <!-- Add more audio tracks with appropriate classes -->
         </div>
 
-        <!-- Second row -->
-        <div class="row music-gallery text-center">
-            <div class="col-md-4 mb-4 track1">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 1</h3>
-                <p>Description of Track 1</p>
-                <audio controls>
-                    <source src="beats/CB1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="col-md-4 mb-4 track2">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 2</h3>
-                <p>Description of Track 2</p>
-                <audio controls>
-                    <source src="./beats/CB1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="col-md-4 mb-4 track3">
-                <img src="./img/Poineer.jpg" height="200" width="200" alt="">
-                <h3>Title of Track 3</h3>
-                <p>Description of Track 2</p>
-                <audio controls>
-                    <source src="./beats/CB1.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <!-- Add more audio tracks with appropriate classes -->
-        </div>
+        
         <div class="button-group text-center mb-4">
             <a href="music_gallery.html"><button class="btn btn-primary">View All</button></a>
         </div>
